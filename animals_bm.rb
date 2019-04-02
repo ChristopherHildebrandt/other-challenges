@@ -8,7 +8,6 @@ input = gets.chomp
 response << input.split(" ")
 #   we are taking splitting the string at each character that is a space
   # \W Any non-word character
-
   # \b Any word boundary character
 
 puts response.to_s
