@@ -1,14 +1,14 @@
-puts "List 3 groceries with a space seperating each"
+puts "List groceries items, using the space to seperate each item"
 # prints user query
 
-response = Array.new
+user_input = Array
 input = gets.chomp
-# recieve user imput
+# recieve user input
 
-response << input.split(" ")
+user_input = input.split(" ")
 #   we are taking splitting the string at each character that is a space
   # \W Any non-word character
   # \b Any word boundary character
 
-puts response.to_s
-# return response as a string
+puts "Grocery List: #{user_input.to_s}"
+# return user_input as a string
