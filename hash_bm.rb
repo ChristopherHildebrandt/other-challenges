@@ -2,6 +2,7 @@ items = [{ customer: "John", item: "Soup", cost: 8.50}, {customer: "Sarah", item
 
 
 array_costs_values = items.map {|x| x.values[2]}
+# using values method to turn hash into an array of values making it easy to turn those values into variables and calling on them what selected 
 # john = array_costs_values.inject(0, :+) does the same as above
 # # created a variable for the values in the hash turning them into an array of intergers
 john = array_costs_values[0]
