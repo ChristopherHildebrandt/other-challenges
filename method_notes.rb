@@ -36,5 +36,16 @@ end
 
 puts 3.times {name}
 
+########################################
+# percentage to decimal places 2
+
+def m_to_km (miles)
+    km = miles * 1.63
+    return " #{miles} %.2f" % km
+end 
+
+puts m_to_km(10)
+
+####################################
 
 
