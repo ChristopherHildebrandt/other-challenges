@@ -3,7 +3,6 @@ require_relative 'dog.rb'# link to dog.rb
 puts "Add a dog to the dog walker service? Enter a name or (q)uit to exit." # asks for user input
 name = gets.strip.capitalize # defining method name with users input striping the white space away
 if (name == "Q" or name.downcase == "quit")  # if the name equals  quit put a goodbye message
-    puts "Ok, Goodbye."
 end
 puts "How old is your dog?" #asking user for age input
 age = gets.to_i# getting data
