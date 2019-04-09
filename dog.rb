@@ -13,7 +13,7 @@ class Dog
     end
 
     def display_walks
-        puts "I have been for #{@walks} walks today"
+        puts "#{@name} has been for #{@walks} walks today"
     end
 
     def speak
@@ -25,8 +25,4 @@ class Dog
     end
 end
 
-doggo = Dog.new("Boof", 5, "Mars")
-puts doggo
-doggo.speak
-puts doggo.location
-doggo.walk.walk.display_walks
+
