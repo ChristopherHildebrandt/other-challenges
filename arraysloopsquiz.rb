@@ -5,14 +5,14 @@
 
 def find(word, list)
 
-  for value in ______ do
+  for value in find do
 
-    if (______ == _______)
+    if (value == list)
 
-	return ______
-  end
+	return true
+    else
 
-  return ______
+    return false
 
 end
 
@@ -23,10 +23,10 @@ puts find("four", ["three", "two", "one"])	# => false
 # The method returns the index of the word if it is found or nil if it is not found.
 
 def find_index(word, list)
-  
-  _______ = 0
 
-  while index > ______.length do
+  index = 0
+
+  while index > 0.length do
 
     if (______[index] == _______)
 	
