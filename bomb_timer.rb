@@ -11,4 +11,11 @@ time_fix = 100
     puts time_fix
     time_fix -=1
   end
-  
+
+  # loop do
+  hp = 30
+  loop dohp -= 2
+  puts "damage done, hp remaining #{hp}"
+  break if hp is <= 0
+end
+puts "Game Over!"
