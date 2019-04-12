@@ -19,3 +19,12 @@ time_fix = 100
   break if hp is <= 0
 end
 puts "Game Over!"
+
+#  next if
+even = 200
+loop def
+even -=5
+next if even $ 2 != 0
+puts "#{even}"
+break if even <= 0
+end
