@@ -1,24 +1,11 @@
-# this is used to show commiting everyday and passion programing/coding as a career.
-# code will be deleted and added on a regular basis
+puts "Enter a number"
+user_entry1 = gets.chomp.to_i
 
+puts "Enter another number"
+user_entry2 = gets.chomp.to_i
 
-# def greet(name)
-#   greetings = ["Hello", "Hi", "Ohai", "ZOMG"].shuffle
-#   "#{greetings.first} #{name}!"
-# end
-
-
-# puts greet("Ada")
-
-# def miles_to_kilometers(miles)
-#   miles * 1.60934
-# end
-
-# puts miles_to_kilometers(25)
-
-def leap_year?(year) # the question mark is there so the ruby knows that its true or false 
-  year % 4 == 0 # this means if the year today when devided by 4 is the quivilant of zero  return 2
+def two_inputs(sum)
+  sum = (user_entry1 + user_entry2).to_i
 end
 
-p leap_year?(2012) 
-p leap_year?(2015)
+puts sum 
