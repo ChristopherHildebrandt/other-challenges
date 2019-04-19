@@ -1,0 +1,11 @@
+Scope - Notes
+
+Scope refers to the reach or visibility of variables.
+Different types of variables have different schope rules.
+
+Global Scope - The scope the includes the entire program
+Global Variables - Only really use the built in ones; $ goes infront of them if you come across; 
+
+Local Scope rules
+- the top level (outside of all the definition blocks ) has its own local scope
+

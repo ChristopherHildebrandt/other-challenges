@@ -103,14 +103,39 @@ end
 # write a ​method​ that will find the position of the first occurence of a letter 
 # in a string.Example input: “helicopter”, “c”Expected output: 4
 
+def without_index(twister)
+	twister.reverse.rindex(letter)
+end
 
 
-8. Write a conditional statement that prints “Congratulations, 
-# you are an aquarius”  ifbirth month is February and birth day is before February 19, 
-# and otherwise prints“Sorry, you are not an aquarius”. 
+# 8. Write a conditional statement that prints “Congratulations, 
+# you are an aquarius”  if birth month is February and birth day is before February 19, 
+# and otherwise prints “Sorry, you are not an aquarius”. 
 # Use two variables to store the two pieces ofinformation 
 # (birth_month and birth_day).
+
+def congratulations( birth_month, birth_day )
+	if birth_month == "febuary" and birth_day <= 18
+		puts "Congratulations, you are aquarius!"
+	else
+		puts "Sorry, you are not an aquarius."
+	end
+end
+
+birth_month = "febuary"
+birth_day = 18
+
+puts congratulations(birth_month, birth_day)
+
+
 
 # 9.Without using the ​reverse​ method, 
 # write ​your own method​ that will reverse the characters in a string input.
 
+def reverse_string(string)
+  split_string = string.split("")
+  reversed = []
+  string.size.times { reversed << split_string.pop }
+  reversed.join
+end
+puts reverse_string("hello")
