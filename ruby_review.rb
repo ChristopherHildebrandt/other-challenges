@@ -93,19 +93,12 @@ return sum
 
 
 # 6.Change the following if statement into a ternary statement:
-if mood == “blue”
- return “sad”
-else   
-  return “happy”7.
-end
 
 # Without using the ​index​ method, 
 # write a ​method​ that will find the position of the first occurence of a letter 
 # in a string.Example input: “helicopter”, “c”Expected output: 4
 
-def without_index(twister)
-	twister.reverse.rindex(letter)
-end
+
 
 
 # 8. Write a conditional statement that prints “Congratulations, 
@@ -132,10 +125,10 @@ puts congratulations(birth_month, birth_day)
 # 9.Without using the ​reverse​ method, 
 # write ​your own method​ that will reverse the characters in a string input.
 
-def reverse_string(string)
+def reverse(string)
   split_string = string.split("")
   reversed = []
   string.size.times { reversed << split_string.pop }
   reversed.join
 end
-puts reverse_string("hello")
+puts reverse("hello")
