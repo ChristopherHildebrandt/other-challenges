@@ -118,7 +118,8 @@ end
 3
 4
 .map
-The .map method is the same as the .collect method. The .map and .collect methods iterate over each element of the array, allowing you to perform actions on them. The .map and .collect methods differ from the .each method in that they return an array containing the transformed elements.
+The .map method is the same as the .collect method. The .map and .collect methods iterate over each element of the array, allowing you to perform actions on them. 
+The .map and .collect methods differ from the .each method in that they return an array containing the transformed elements.
 
 array.map { |element| element * 2 }
   puts element

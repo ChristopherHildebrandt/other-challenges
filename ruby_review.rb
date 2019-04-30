@@ -36,6 +36,12 @@ to_f
 
 
 
+def miles_to_km(miles)
+  return miles.to_f * 8/5
+  end
+  
+  # puts miles_to_km
+  puts miles_to_km(10)
 
 
 
@@ -53,7 +59,7 @@ class Website
 @quantity
 @item_id
 
-class Menu
+class Menu # probably want to store this in another file rather than having a class
 @item_type
 @item_category
 @remaining_quantity
@@ -74,18 +80,18 @@ class Reciept
 
 
 # 5.Write a ​method ​that takes two inputs and returns the sum of the inputs
-puts "Enter a number"
-user_entry1 = gets.chomp.to_s
-
-puts "Enter another number"
-user_entry2 = gets.chomp.to_s
-
-def two_inputs(sum)
-  sum = user_entry1 + user_entry2
+def index_char(string1, characters)
+    index = 0
+    for char in string1.chars do
+      if char == characters
+        return index
+      end
+      index += 1
+  end
+  return nil
 end
 
-return sum
-
+puts index_char("hippo", "q")
 
 
 
@@ -94,20 +100,26 @@ return sum
 
 # 6.Change the following if statement into a ternary statement:
 
-# Without using the ​index​ method, 
-# write a ​method​ that will find the position of the first occurence of a letter 
-# in a string.Example input: “helicopter”, “c”Expected output: 4
+# Without using the ​index​ method,
+# write a ​method​ that will find the position of the first occurence of a letter
+# in a string.
+# Example input: “helicopter”, “c”Expected output: 4
 
 
 
 
-# 8. Write a conditional statement that prints “Congratulations, 
-# you are an aquarius”  if birth month is February and birth day is before February 19, 
-# and otherwise prints “Sorry, you are not an aquarius”. 
-# Use two variables to store the two pieces ofinformation 
+
+
+
+
+
+# 8. Write a conditional statement that prints “Congratulations,
+# you are an aquarius”  if birth month is February and birth day is before February 19,
+# and otherwise prints “Sorry, you are not an aquarius”.
+# Use two variables to store the two pieces ofinformation
 # (birth_month and birth_day).
 
-def congratulations( birth_month, birth_day )
+def congratulations(birth_month, birth_day )
 	if birth_month == "febuary" and birth_day <= 18
 		puts "Congratulations, you are aquarius!"
 	else
