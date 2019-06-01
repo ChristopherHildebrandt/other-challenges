@@ -1,0 +1,1 @@
+puts "making coffee" if customer.would_like_coffee?
