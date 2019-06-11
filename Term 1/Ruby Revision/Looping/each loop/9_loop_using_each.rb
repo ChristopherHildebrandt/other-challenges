@@ -1,6 +1,6 @@
 # Looping through an array 
-[1, 2, 3 ,4 ,5 ,6].each do |n|
-  text = "Current number is: #{n}"
+[1, 2, 3 ,4 ,5 ,6].each do |i|
+  text = "Current number is: #{i}"
   puts text
 end
 

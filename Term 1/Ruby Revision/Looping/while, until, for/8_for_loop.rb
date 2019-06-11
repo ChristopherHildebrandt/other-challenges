@@ -8,8 +8,8 @@ end
 
 # hash
 
-Chris {:name => Chris, :age => 28, :job => Developer}
+id {:name => Chris, :age => 28, :job => Developer}
 
-for key, val in Chris
+for key, val in id
   puts "#{key} is #{val}"
 end
